@@ -1,0 +1,9 @@
+[Unit]
+Description=Start Fan
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /usr/local/bin/fan.sh
+
+[Install]
+WantedBy=multi-user.target

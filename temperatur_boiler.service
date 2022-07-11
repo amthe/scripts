@@ -1,0 +1,10 @@
+[Unit]
+Description=Temperatur in DB schreiben
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/temperatur_boiler.py
+
+[Install]
+WantedBy=multi-user.target

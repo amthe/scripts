@@ -1,0 +1,11 @@
+[Unit]
+Description=30min timer
+Requires=temperatur_boiler.service
+After=multi-user.target
+
+[Timer]
+OnCalendar=*:0/30
+Unit=temperatur_boiler.service
+
+[Install]
+WantedBy=multi-user.target
